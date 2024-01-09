@@ -1,0 +1,53 @@
+public class Person {
+    // Fields or attributes
+    private String name;
+    private int age;
+
+    // Constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Methods
+    public void introduce() {
+        System.out.println("Hello, my name is " + name + " and I am " + age + " years old.");
+    }
+
+    // Getter and Setter methods
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    // Main method to demonstrate the class and object
+    public static void main(String[] args) {
+        // Creating an object of the Person class
+        Person person1 = new Person("John", 25);
+
+        // Accessing object's properties and methods
+        System.out.println("Name: " + person1.getName());
+        System.out.println("Age: " + person1.getAge());
+        person1.introduce();
+
+        // Modifying object's properties
+        person1.setName("Jane");
+        person1.setAge(30);
+
+        // Accessing modified properties
+        System.out.println("Updated Name: " + person1.getName());
+        System.out.println("Updated Age: " + person1.getAge());
+        person1.introduce();
+    }
+}
